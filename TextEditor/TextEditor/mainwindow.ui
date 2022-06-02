@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Text editor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="text_edit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>799</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="open"/>
+    <addaction name="open_only_for_read"/>
+    <addaction name="save"/>
+    <addaction name="save_as"/>
+    <addaction name="separator"/>
+    <addaction name="print"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="reference">
+    <property name="title">
+     <string>Reference</string>
+    </property>
+    <addaction name="about_programm"/>
+   </widget>
+   <widget class="QMenu" name="view">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="language">
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <addaction name="language_rus"/>
+     <addaction name="language_eng"/>
+    </widget>
+    <widget class="QMenu" name="decoration">
+     <property name="title">
+      <string>Decoration</string>
+     </property>
+     <addaction name="decor_bright"/>
+     <addaction name="decor_dark"/>
+    </widget>
+    <addaction name="language"/>
+    <addaction name="decoration"/>
+   </widget>
+   <widget class="QMenu" name="format">
+    <property name="title">
+     <string>Format</string>
+    </property>
+    <widget class="QMenu" name="align">
+     <property name="title">
+      <string>Align by</string>
+     </property>
+     <addaction name="left"/>
+     <addaction name="center"/>
+     <addaction name="right"/>
+    </widget>
+    <addaction name="font"/>
+    <addaction name="align"/>
+    <addaction name="copy_format"/>
+    <addaction name="paste_format"/>
+   </widget>
+   <addaction name="file"/>
+   <addaction name="view"/>
+   <addaction name="format"/>
+   <addaction name="reference"/>
+  </widget>
+  <action name="open">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="save_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="about_programm">
+   <property name="text">
+    <string>About programm</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="open_only_for_read">
+   <property name="text">
+    <string>Open read-only</string>
+   </property>
+  </action>
+  <action name="language_rus">
+   <property name="text">
+    <string>Russian</string>
+   </property>
+  </action>
+  <action name="language_eng">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="decor_bright">
+   <property name="text">
+    <string>Bright</string>
+   </property>
+  </action>
+  <action name="decor_dark">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="print">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="font">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="left">
+   <property name="text">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="center">
+   <property name="text">
+    <string>Center</string>
+   </property>
+  </action>
+  <action name="right">
+   <property name="text">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="copy_format">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="paste_format">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
